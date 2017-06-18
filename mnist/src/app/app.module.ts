@@ -3,18 +3,12 @@ import { NgModule } from '@angular/core';
 import { FormsModule } from '@angular/forms';
 import { HttpModule } from '@angular/http';
 
-import { AppComponent } from './app.component';
+import { MnistComponent } from './app.component';
 
 @NgModule({
-  declarations: [
-    AppComponent
-  ],
-  imports: [
-    BrowserModule,
-    FormsModule,
-    HttpModule
-  ],
+  declarations: [MnistComponent],
+  imports: [BrowserModule, FormsModule, HttpModule],
   providers: [],
-  bootstrap: [AppComponent]
+  bootstrap: [MnistComponent]
 })
-export class AppModule { }
+export class AppModule {}
