@@ -1,0 +1,14 @@
+{
+  "name": "plAIground",
+  "version": "1.0.0",
+  "description": "Artificial Neural Networks and Machine Learning playground",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/CarmenPopoviciu/plAIground.git"
+  },
+  "author": "Carmen Popoviciu",
+  "homepage": "https://github.com/CarmenPopoviciu/plAIground#readme"
+}
