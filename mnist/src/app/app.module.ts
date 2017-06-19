@@ -4,10 +4,11 @@ import { FormsModule } from '@angular/forms';
 import { HttpModule } from '@angular/http';
 
 import { MnistComponent } from './app.component';
+import { MnistCanvasComponent } from './canvas/mnist-canvas.component';
 
 @NgModule({
-  declarations: [MnistComponent],
   imports: [BrowserModule, FormsModule, HttpModule],
+  declarations: [MnistComponent, MnistCanvasComponent],
   providers: [],
   bootstrap: [MnistComponent]
 })
