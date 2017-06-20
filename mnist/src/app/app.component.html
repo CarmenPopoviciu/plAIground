@@ -1,3 +1,10 @@
-<h1>MNIST app</h1>
+<div class="mnist-container">
+  <h1>MNIST app</h1>
 
-<mnist-canvas [id]="'mnist'"></mnist-canvas>
+  <mnist-canvas [id]="'mnist'"></mnist-canvas>
+
+  <div>
+    <button md-button (click)="clearCanvas()">Clear</button>
+    <button md-button (click)="recognizeDigit()">Predict</button>
+  </div>
+</div>
