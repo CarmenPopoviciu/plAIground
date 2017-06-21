@@ -18,5 +18,7 @@ export const graphics = {
   },
 
   // grayscale: (imgData: ImageData, mode = 'luma') => grafi.grayscale(imgData, { mode: mode }),
-  threshold: (imgData: ImageData, level = 127) => grafi.threshold(imgData, { level: level })
+  threshold: (imgData: ImageData, level = 127) => grafi.threshold(imgData, { level: level }),
+  invert: (imgData: ImageData) => grafi.invert(imgData)
+
 }

@@ -100,8 +100,7 @@ export class MnistCanvasComponent implements OnInit {
   ): void {
     ctx.beginPath();
     ctx.moveTo(prevMousePos.x, prevMousePos.y);
-    ctx.lineWidth = 2;
-    ctx.strokeStyle = '#FF0000'
+    ctx.lineWidth = 1;
     ctx.lineTo(mousePos.x, mousePos.y);
     ctx.closePath();
     ctx.stroke();

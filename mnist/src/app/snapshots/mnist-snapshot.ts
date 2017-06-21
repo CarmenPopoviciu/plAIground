@@ -222,24 +222,25 @@ const data = {
   "b3": [-0.0972961, 0.0300511, -0.0173903, -0.00445253, 0.0983954, -0.211495, -0.157007, 0.113646, 0.259432, -0.0774153]
 }
 
+const generateFirstLayer = (inputs) => {
+  let nodes = [];
+  for(let i=0; i<inputs; i++) {
+    nodes.push({weights: null, bias: null});
+  }
+  return {nodes: nodes}
+}
+
 export let mnistSnapshot = {
   layers: [
+    generateFirstLayer(784),
     {
-      "nodes": [
-      {
-        "weights": null,
-        "bias": null
-      },
-      {
-        "weights": null,
-        "bias": null
-      }]
-    },
-    {
+      activation: 'sigmoid',
       nodes: [...data.w12.map((weights, index) => Object.assign({}, {weights: weights, bias: data.b2[index]}))]
     },
     {
+      activation: 'sigmoid',
       nodes: [...data.w23.map((weights, index) => Object.assign({}, {weights: weights, bias: data.b3[index]}))]
     }
   ]
 }
+

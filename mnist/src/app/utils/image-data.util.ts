@@ -16,8 +16,10 @@ export const imageData = {
   toMNIST: (imgData: ImageData): Array<number> => {
     let pixels: Uint8ClampedArray = imgData.data;
     let mnistData = [];
+    let alpha = 0;
     for (let i = 0; i < pixels.length; i += 4) {
-      mnistData[i / 4] = pixels[i] / 255;
+      alpha = pixels[i + 3];
+      mnistData[i / 4] = alpha > 0 ? 1 : 0;
     }
     return mnistData;
   },

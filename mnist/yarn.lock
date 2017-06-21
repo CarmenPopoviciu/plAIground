@@ -3149,9 +3149,9 @@ negotiator@0.6.1:
   version "0.6.1"
   resolved "https://registry.yarnpkg.com/negotiator/-/negotiator-0.6.1.tgz#2b327184e8992101177b28563fb5e7102acd0ca9"
 
-"neural-net@https://github.com/CarmenPopoviciu/neural-net.git":
+"neural-net@https://github.com/CarmenPopoviciu/neural-net.git#master":
   version "1.0.0"
-  resolved "https://github.com/CarmenPopoviciu/neural-net.git#2fa08bd810f45ab9f9bb569214cdcb3a6889c579"
+  resolved "https://github.com/CarmenPopoviciu/neural-net.git#e6def5141197a15afc0b92a16cd89aa1a1bed1ed"
   dependencies:
     jsonfile "^2.4.0"
 

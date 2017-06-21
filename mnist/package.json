@@ -26,7 +26,7 @@
     "rxjs": "^5.1.0",
     "zone.js": "^0.8.4",
     "grafi": "https://github.com/grafijs/grafi.git",
-    "neural-net": "https://github.com/CarmenPopoviciu/neural-net.git"
+    "neural-net": "https://github.com/CarmenPopoviciu/neural-net.git#master"
   },
   "devDependencies": {
     "@angular/cli": "1.0.2",

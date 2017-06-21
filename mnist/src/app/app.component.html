@@ -1,7 +1,11 @@
 <div class="mnist-container">
   <h1>MNIST app</h1>
 
-  <mnist-canvas [id]="'mnist'"></mnist-canvas>
+  <div class="canvas">
+    <mnist-canvas [id]="'mnist'"></mnist-canvas>
+    <div class="to"> -> </div>
+    <div>{{predictedDigit}}</div>
+  </div>
 
   <div>
     <button md-button (click)="clearCanvas()">Clear</button>
